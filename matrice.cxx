@@ -428,7 +428,9 @@ int main() {
 							break;
 						case 11:
 						case 13:
-							if (next_matrix_id < MAX_NB_MATRIX) {
+                            // I verify if new matrix or not and
+                            // if can create another matrix
+							if (MLS != next_matrix_id || next_matrix_id != MAX_NB_MATRIX) {
 								if (data == "$") {
 									// Just copy
 								} else if (data == "input") {
